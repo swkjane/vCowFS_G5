@@ -1,5 +1,7 @@
 # vCowFS_G5
 
+ใช้ Kali Linux ในการทำงาน 
+
 ทำการดาวน์โหลด meson
 
     $ git clone git://github.com/mesonbuild/meson.git
