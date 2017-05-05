@@ -2,7 +2,7 @@
 
 ทำการดาวน์โหลด libfuse จาก
 
-`$ git clone git://github.com/libfuse/libfuse.git`
-`$ mkdir build`
-`$ cd build`
-`$ meson ..`
+    $ git clone git://github.com/libfuse/libfuse.git
+    $ mkdir build
+    $ cd build
+    $ meson ..
