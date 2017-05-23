@@ -1,27 +1,3 @@
-/*
-  FUSE: Filesystem in Userspace
-  Copyright (C) 2001-2007  Miklos Szeredi <miklos@szeredi.hu>
-  Copyright (C) 2011       Sebastian Pipping <sebastian@pipping.org>
-
-  This program can be distributed under the terms of the GNU GPL.
-  See the file COPYING.
-*/
-
-/** @file
- *
- * This file system mirrors the existing file system hierarchy of the
- * system, starting at the root file system. This is implemented by
- * just "passing through" all requests to the corresponding user-space
- * libc functions. Its performance is terrible.
- *
- * Compile with
- *
- *     gcc -Wall passthrough.c `pkg-config fuse3 --cflags --libs` -o passthrough
- *
- * ## Source code ##
- * \include passthrough.c
- */
-
 
 #define FUSE_USE_VERSION 30
 
