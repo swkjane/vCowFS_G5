@@ -550,11 +550,9 @@ static struct fuse_operations xmp_oper = {
 int main(int argc, char *argv[])
 {
 	umask(0);
-	mount("none","tmp","vcowfs",0,0755);
 	if(first==0){
         init_MTF(MTF);
         first=1;
 	}
-	write(STDOUT_FILENO,argv[2],sizeof(argv[2]));
 	return fuse_main(argc, argv, &xmp_oper, NULL);
 }
